@@ -1,0 +1,218 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+  background-image: url('/assets/images/Background-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: inline ;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.PS {
+    color: white;
+    text-align: center;
+}
+
+.Arban {
+    background-color: rgb(36, 34, 142);
+    padding: 10px;
+}
+
+nav {
+  background-color: rgb(27, 26, 85);
+  padding: 3px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 4px;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: white;
+  background-color: #000000;
+  border-radius: 8rem;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(25, 12, 200, 0.925);
+  background-color: #e9edf3fe;
+  padding: 20px;
+}
+
+
+.logo-skill {
+  display: flex;
+  gap: 3rem;
+}
+
+.logo-skill > img {
+  width: 45px;
+}
+
+
+.media-sosial {
+  display: flex;
+  gap: 1rem;
+}
+.instagram-logo {
+  max-width: 37px;
+}
+.instagram {
+  margin-top: 4px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+aside {
+  flex: 1;
+}
+
+.profile header {
+  text-align: center;
+}
+.profile img {
+  width: 200px;
+}
+.profiles {
+  border-radius: 100px;
+}
+
+
+
+
+/* footer */
+footer {
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(27, 26, 85);
+  text-align: center;
+  font-weight: bold;
+}
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  /* Blue */
+  width: 120px;
+  height: 120px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
+
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+
